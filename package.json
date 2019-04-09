@@ -12,8 +12,8 @@
     "url": "git+https://github.com/88dennis/Fat-Biggies-Burger.git"
   },
   "dependencies": {
-    "express-handlebars": "*",
     "express": "*",
+    "express-handlebars": "^3.0.2",
     "mysql": "*"
   },
   "keywords": [],
@@ -24,4 +24,3 @@
   },
   "homepage": "https://github.com/88dennis/Fat-Biggies-Burger#readme"
 }
-
