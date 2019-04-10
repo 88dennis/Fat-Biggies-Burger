@@ -1,30 +1,41 @@
-<h1>Fat Biggies Burger</h1>
 
-<p>Add your Burger with this App</p>
+<div class="head1"><h1>Wreck that Body Burgers!</h1></div>
 
-<!-- Pass in data from server.js -->
-<div class="colOne">
+<h2>Burgers you created</h2>
+
 <ul>
   {{#each burgers}}
-  	<li>
-  		<p><span class="label"></span> {{this.id}}. <span class="label">Burger Name:</span> {{this.burger}}</p>
-   
-      <button data-id="{{this.id}}" class="delburger">I don't like this burger</button>
+    {{#unless eaten}}
+      {{> burgerspartialfolder/burger-block eaten=true}}
+    {{/unless}}
+  {{/each}}
 
-      <a href="/{{this.id}}">Update this Menu</a>
-  	</li>
+</ul>
+
+<h2>Burgers Eaten</h2>
+
+<ul>
+  {{#each burgers}}
+    {{#if eaten}}
+      {{> burgerspartialfolder/burger-block eaten=false}}
+    {{/if}}
   {{/each}}
 </ul>
-</div>
 
 <h2>Add a Burger</h2>
 
-
 <form class="create-form">
 
-<div class="form-group">
-    <label for="bur">Burger:</label>
-    <input type="text" id="bur" name="burger">
+  <div class="form-group">
+    <label for="bur">Burger Name:</label>
+    <input type="text" id="bur" name="burgername">
+  </div>
+
+  <div class="form-group">
+    {{!-- <label for="eaten">Eaten?</label><br> --}}
+    {{!-- <input type="radio" name="eaten" value="1" checked> Sleepy!<br> --}}
+    
+    {{!-- <input type="text" name="eaten" value="0"> Awake --}}
   </div>
 
   <button type="submit">Add Burger</button>

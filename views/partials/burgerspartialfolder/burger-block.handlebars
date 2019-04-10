@@ -1,0 +1,13 @@
+<p>
+
+	{{#if eaten}}Enjoy your {{burgername}}!{{else}}Thank you for eating our {{burgername}}!{{/if}}
+	
+{{#if eaten}}
+	<button class="change-burger" data-id="{{id}}" data-eatthis="{{eaten}}">
+		EAT ME NOW!
+	</button>
+
+	{{else}}I LOVE BURGERS!{{/if}}
+
+	<button class="delete-burger" data-id="{{this.id}}">Remove from your menu</button>
+</p>
