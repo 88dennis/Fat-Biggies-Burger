@@ -6,8 +6,10 @@
 	<button class="change-burger" data-id="{{id}}" data-eatthis="{{eaten}}">
 		EAT ME NOW!
 	</button>
-
-	{{else}}I LOVE BURGERS!{{/if}}
-
-	<button class="delete-burger" data-id="{{this.id}}">Remove from your menu</button>
+<button class="delete-burger" data-id="{{this.id}}">Remove from your menu</button>
+	{{else}}I LOVE BURGERS!
+	<button class="delete-burger" data-id="{{this.id}}">Throw your trash properly</button>
+	
+	
+	{{/if}}
 </p>

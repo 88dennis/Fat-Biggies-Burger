@@ -1,3 +1,9 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 li {
     padding: 5px;
     margin: 5px;
@@ -21,4 +27,30 @@ li {
   .colOne {
     width:50%;
   }
+
+.nav1 {
+  display: flex;
+  justify-content: space-between;
+  background-color: black;
+  height: 100px;
+  color: white;
+}
+
+.head1 {
+  display: flex;
+  justify-content: center;
+}
+
+.orders {
+  width: 50%;
+}
+
+.purchased {
+  width: 50%;
+}
+
+.container1 {
+  display: flex;
+  justify-content: center;
+}
   
