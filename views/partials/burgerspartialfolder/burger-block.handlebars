@@ -1,15 +1,15 @@
-<p>
+<div class="updatebox">
 
-	{{#if eaten}}Enjoy your {{burgername}}!{{else}}Thank you for eating our {{burgername}}!{{/if}}
+	{{#if eaten}}Enjoy your {{burgername}}!{{else}}Thank you for eating {{burgername}}!{{/if}}
 	
 {{#if eaten}}
 	<button class="change-burger" data-id="{{id}}" data-eatthis="{{eaten}}">
 		EAT ME NOW!
 	</button>
 <button class="delete-burger" data-id="{{this.id}}">Remove from your menu</button>
-	{{else}}I LOVE BURGERS!
+	{{else}}
 	<button class="delete-burger" data-id="{{this.id}}">Throw your trash properly</button>
 	
 	
 	{{/if}}
-</p>
+</div>
