@@ -1,16 +1,16 @@
 <div class="updatebox">
 
-	{{#if eaten}}<span>Enjoy!</span>{{burgername}}{{else}}<span>Thank you for eating</span> {{burgername}}!{{/if}}
+	{{#if eaten}}<span>Enjoy! {{burgername}}</span>{{else}}<span>Thank you for eating {{burgername}}!</span>{{/if}}
 	
 {{#if eaten}}
 
 
-	<button class="change-burger" data-id="{{id}}" data-eatthis="{{eaten}}"><img src="https://i.imgur.com/4XFaB8i.png" alt="">
+	<button class="change-burger" data-id="{{id}}" data-eatthis="{{eaten}}"><img src="https://i.imgur.com/NVTOLbC.png" alt="">
 	</button>
 
-<button class="delete-burger" data-id="{{this.id}}"><img src="https://i.imgur.com/5SdUG6u.png" alt=""></button>
+<button class="delete-burger" data-id="{{this.id}}"><img src="https://i.imgur.com/V7V7HIf.png" alt=""></button>
 	{{else}}
-	<button class="delete-burger" data-id="{{this.id}}">Throw your trash properly</button>
+	<button class="delete-burger" data-id="{{this.id}}"><img src="https://i.imgur.com/TO7i7iL.png" alt=""></button>
 	
 	
 	{{/if}}

@@ -143,22 +143,32 @@ input:focus {
 
 .delete-burger {
   background-color: transparent;
-  border-color: white;
-  border-radius: 50px;
-  color: white;
+  border-color: transparent;
+  
 }
 .change-burger {
   background-color: transparent;
   border: transparent;
 }
 
+.delete-burger:focus {
+  outline: none !important;
+}
+
+.change-burger:focus {
+  outline: none !important;
+}
+/* 
 .updatebox {
   overflow: auto;
-}
+} */
 
 img {
   width: 30px;
   height: 30px;
-  margin: 0;
+ 
 
+}
+span {
+  font-size: 20px;
 }

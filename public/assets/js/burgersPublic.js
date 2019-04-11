@@ -4,6 +4,16 @@
 $(function() {
 
     $(".change-burger").on("click", function(event) {
+
+      // $(".purchased").hide(1000);
+
+  //     var x = document.getElementsById("purchasedId");
+  // if (x.style.display === "none") {
+  //   x.style.display = "block";
+  // } else {
+  //   x.style.display = "none";
+  // }
+
       var id = $(this).data("id");
       var imFull = $(this).data("eatthis");
   
@@ -22,8 +32,10 @@ $(function() {
           console.log("changed eatthis", imFull);
           // Reload the page to get the updated list
           location.reload();
+          
         }
       );
+     
     });
   
     $(".create-form").on("submit", function(event) {
