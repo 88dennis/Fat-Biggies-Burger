@@ -85,6 +85,7 @@ h2 {
   justify-content: center;
   width: 95%;
   margin-top: 50px;
+  flex-direction: row;
 }
 input {
   width: 30%;
@@ -171,4 +172,41 @@ img {
 }
 span {
   font-size: 20px;
+}
+
+@media (device-height: 812px) and (device-width: 375px) and (-webkit-min-device-pixel-ratio: 2){
+  .container1 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width:100%;
+        margin:0;
+  }
+
+  .purchased {
+    width: 80%;
+  }
+  .orders {
+    width: 80%;
+  }
+}
+
+@media (max-width: 768px){
+
+  .container1 {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width:100%;
+        
+  }
+
+  .orders {
+    width: 80%;
+  }
+  .purchased {
+    margin-top: 50px;
+    width: 80%;
+  }
+
 }
