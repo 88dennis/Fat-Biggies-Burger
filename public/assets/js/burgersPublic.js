@@ -1,11 +1,28 @@
 //PUBLIC FOLDER
+// $(document).ready(function(){    
+//   alert('page loaded');  // alert to confirm the page is loaded 
+//   event.preventDefault();   
+//   $('.container1').hide(); //enter the class or id of the particular html element which you wish to hide. 
+  
+//   $(".create-form").click(function(){
+//     $(".container1").show(1000);
+  
+//   });
 
+// });
 // Make sure we wait to attach our handlers until the DOM is fully loaded.
+
+
+
 $(function() {
+
+
 
     $(".change-burger").on("click", function(event) {
 
       // $(".purchased").hide(1000);
+
+      
 
   //     var x = document.getElementsById("purchasedId");
   // if (x.style.display === "none") {
@@ -35,8 +52,10 @@ $(function() {
           
         }
       );
-     
+    
     });
+
+
   
     $(".create-form").on("submit", function(event) {
       // Make sure to preventDefault on a submit event.
@@ -56,8 +75,10 @@ $(function() {
           console.log("created new cat");
           // Reload the page to get the updated list
           location.reload();
+          
         }
       );
+      
     });
   
     $(".delete-burger").on("click", function(event) {
@@ -75,6 +96,7 @@ $(function() {
       );
     });
 
-
   });
+  
+
   

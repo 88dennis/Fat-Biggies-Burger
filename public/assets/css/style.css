@@ -60,7 +60,7 @@ li {
   border-radius: 5px;
   /* height: 200px; */
   font-family: 'Finger Paint', cursive;
-
+min-height: 200px;
 }
 
 h2 {
@@ -78,6 +78,7 @@ h2 {
   border-radius: 5px;
   /* height: 200px; */
   font-family: 'Finger Paint', cursive;
+  min-height: 200px;
 }
 
 .container1 {
